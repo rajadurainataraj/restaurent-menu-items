@@ -20,6 +20,13 @@ a {
   text-decoration: none;
   color: inherit;
 }
+.active, .btn:hover {
+  color: red;
+  color: white;
+}
+li:active {
+  color:green;
+}
 body {
   background-color: #fff;
   font-family: "Roboto", sans-serif;
@@ -32,7 +39,7 @@ ul {
   margin: 0;
   gap: 15px;
   display: flex;
-  font-size: 1.3em;
+  font-size: 1.2em;
   color: #575757;
 }
 
