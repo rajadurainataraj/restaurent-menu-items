@@ -16,17 +16,20 @@ button {
   margin: 0;
   padding: 0;
 }
+
 a {
   text-decoration: none;
   color: inherit;
 }
-.active, .btn:hover {
-  color: red;
-  color: white;
+.active {
+  color: #ff0056;
 }
-li:active {
-  color:green;
+.active:hover,
+.nav-receipe:hover,
+.nav-addtocart {
+  border-bottom: 3px solid #ff0056;
 }
+
 body {
   background-color: #fff;
   font-family: "Roboto", sans-serif;
@@ -243,113 +246,6 @@ footer {
   gap: 20px;
 }
 
-@media only screen and (max-width: 1264px) {
-  .menu-left-text {
-    padding-top: 1em;
-  }
-}
-
-@media only screen and (max-width: 1423px) {
-  .signup-container {
-    img {
-      height: 342px;
-    }
-  }
-}
-
-@media only screen and (max-width: 770px) {
-  .main-container {
-    width: 90vw;
-    margin: 0 auto;
-  }
-
-  .mobile-menu {
-    display: block;
-    font-size: large;
-  }
-
-  .signup-container {
-    display: flex;
-    flex-direction: column;
-    width: 90vw;
-
-    img {
-      width: 90vw;
-    }
-  }
-
-  .signup-btn-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .signup-menu {
-    display: flex;
-    align-items: center;
-  }
-
-  .explore-btn {
-    margin: 10px auto;
-    margin-top: 20px;
-  }
-
-  .top-menu-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    justify-content: center;
-  }
-  .menu-left-text {
-    width: 90vw;
-    /* border: 1px solid red; */
-  }
-  .menu-header {
-    text-align: center;
-  }
-  .menus {
-    display: none;
-  }
-  /* .quote-container {
-width:80vw;
-border:1px solid red;
-background-color: yellow;
-} */
-  .menu-left-text {
-    text-align: center;
-  }
-
-  .menu-grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 10px;
-  }
-
-  .menu-grid-container img {
-    border-radius: 3px;
-    width: 200px;
-    gap: 5px;
-    height: 180px;
-  }
-  .quote-container {
-    width: 90vw;
-  }
-  footer {
-    display: flex;
-    flex-direction: column;
-  }
-  .footer-about {
-    width: 90vw;
-  }
-  .facebook-footer {
-    display: flex;
-    gap: 100px;
-  }
-  .footer-header {
-    margin-bottom: 10px;
-  }
-}
-
 /* receipes */
 .receipe-header {
   font-size: 1.3em;
@@ -395,7 +291,7 @@ background-color: yellow;
   border-radius: 3px;
   width: 100%;
   object-fit: cover;
-  height: 200px;
+  height: 190px;
 }
 .receipe-name {
   font-weight: bold;
@@ -428,7 +324,6 @@ background-color: yellow;
   gap: 2vw;
   flex-wrap: wrap;
 }
-
 .author-img {
   height: 60px;
   width: 60px;
@@ -441,3 +336,164 @@ background-color: yellow;
   background-color: #fff;
   object-fit: cover;
 }
+
+@media only screen and (max-width: 1264px) {
+  .menu-left-text {
+    padding-top: 1em;
+  }
+}
+
+@media only screen and (max-width: 1423px) {
+  .signup-container {
+    img {
+      height: 342px;
+    }
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .main-container {
+    width: 90vw;
+    margin: 0 auto;
+  }
+
+  .mobile-menu {
+    display: block;
+    font-size: large;
+    padding-right: 20px;
+  }
+
+  .signup-container {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    img {
+      width: 100vw;
+    }
+  }
+
+  .nav-sub-container {
+    width: 100vw;
+  }
+  .signup-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .signup-menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .explore-btn {
+    margin: 10px auto;
+    margin-top: 20px;
+  }
+
+  .top-menu-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+  }
+  .menu-left-text {
+    width: 90vw;
+    /* border: 1px solid red; */
+  }
+  .menu-header {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-right: 30px;
+  }
+  .menus {
+    display: none;
+  }
+
+  .menu-left-text {
+    text-align: center;
+  }
+
+  .menu-grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5px;
+  }
+
+  .menu-grid-container img {
+    border-radius: 3px;
+    width: 110px;
+    gap: 5px;
+    height: 120px;
+    margin: 0 auto;
+  }
+  .cheif-grid-main {
+    grid-template-columns: max-content;
+  }
+  .quote-container {
+    width: 90vw;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+  .footer-about {
+    width: 90vw;
+  }
+  .facebook-footer {
+    display: flex;
+    gap: 100px;
+  }
+  .footer-header {
+    margin-bottom: 10px;
+  }
+  /* receips */
+  .receipe-header {
+    padding-top: 10px;
+  }
+  .food-items-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90vw;
+    margin-bottom: 20px;
+  }
+  .receipe-main-container {
+    flex-direction: column;
+  }
+  .receipe-container {
+    width: 90vw;
+  }
+  .logo {
+    padding-left: 10px;
+  }
+}
+
+/* @media only screen and (max-width: 1180px) {
+.menu-grid-container{
+  margin: 0 auto;
+  img {
+    width:200px
+  }
+}
+  .signup-container {
+    align-items: center;
+    img {
+      width:80vw;
+    }
+  }
+.signup-menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap:10px;
+  padding:0 10px;
+}
+} */
